@@ -1,0 +1,50 @@
+# General Knowledge Quiz
+
+score = 0
+
+print("Welcome to the General Knowledge Quiz")
+print()
+
+# Question 1
+answer = input("1. What is the capital of France? ")
+
+if answer.lower() == "paris":
+    print("Correct")
+    score += 1
+else:
+    print("Wrong. The correct answer is Paris.")
+
+print()
+
+# Question 2
+answer = input("2. Which planet is known as the Red Planet? ")
+
+if answer.lower() == "mars":
+    print("Correct")
+    score += 1
+else:
+    print("Wrong. The correct answer is Mars.")
+
+print()
+
+# Question 3
+answer = input("3. Who wrote the national anthem of India? ")
+
+if answer.lower() == "rabindranath tagore":
+    print("Correct")
+    score += 1
+else:
+    print("Wrong. The correct answer is Rabindranath Tagore.")
+
+print()
+print("Quiz Completed")
+print("Your Final Score:", score, "/3")
+
+if score == 3:
+    print("Excellent! You answered all questions correctly.")
+elif score == 2:
+    print("Good Job!")
+elif score == 1:
+    print("Keep Practicing.")
+else:
+    print("Better Luck Next Time.")
